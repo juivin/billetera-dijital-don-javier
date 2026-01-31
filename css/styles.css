@@ -1,4 +1,4 @@
-/* Paleta de colores sobria */
+
 :root {
     --gold: #b8962e;
     --dark: #2d3436;
@@ -12,7 +12,7 @@ body.bg-light-custom {
     color: var(--dark);
 }
 
-/* Tipografía de marca */
+
 .logo-text-dark {
     font-family: 'Playfair Display', serif;
     color: var(--dark);
@@ -35,7 +35,7 @@ body.bg-light-custom {
     color: #ffffff;
 }
 
-/* Tarjeta de Saldo */
+
 .card-balance {
     background-color: #ffffff;
     border-radius: 12px;
@@ -46,7 +46,7 @@ body.bg-light-custom {
     letter-spacing: 1.5px;
 }
 
-/* Botón Dorado Don Javier */
+
 .btn-gold-donjavier {
     background-color: var(--gold);
     color: white;
@@ -59,7 +59,6 @@ body.bg-light-custom {
     color: white;
 }
 
-/* Tarjetas de Acción */
 .card-action {
     transition: transform 0.3s;
     border-radius: 12px;
@@ -69,7 +68,7 @@ body.bg-light-custom {
     transform: translateY(-5px);
 }
 
-/* Tablas */
+
 .bg-gray-light {
     background-color: #fcfcfc;
 }
@@ -81,10 +80,9 @@ body.bg-light-custom {
 
 .tracking-wider { letter-spacing: 1px; }
 
-/* Añadido send */
 
 
-/* Inputs personalizados y limpios */
+
 .custom-input {
     border: 1px solid #e0e0e0 !important;
     padding: 12px;
@@ -97,7 +95,6 @@ body.bg-light-custom {
     box-shadow: none !important;
 }
 
-/* Avatares circulares minimalistas */
 .avatar-circle-clean {
     width: 40px;
     height: 40px;
@@ -111,7 +108,7 @@ body.bg-light-custom {
     font-weight: 700;
 }
 
-/* Items de contacto */
+
 .contact-item:hover {
     background-color: #f8f9fa !important;
 }
@@ -121,7 +118,7 @@ body.bg-light-custom {
     color: white;
 }
 
-/* Espaciado de letras para títulos de labels */
+
 .tracking-wider {
     letter-spacing: 1px;
 }
