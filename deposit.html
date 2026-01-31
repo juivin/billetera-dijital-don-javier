@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depositar Fondos | Don Javier</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light-custom">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand logo-text-dark" href="menu.html">DON JAVIER</a>
+            <div class="ms-auto d-flex align-items-center">
+                <a href="menu.html" class="nav-link me-3 text-muted small fw-bold">Volver al Menú</a>
+                <a href="login.html" class="btn btn-cerrar-sesion rounded-pill px-4">Cerrar Sesión</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-4">
+                    <div class="card-header bg-white border-bottom py-3 text-center">
+                        <h5 class="mb-0 fw-bold">Incrementar Capital</h5>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        
+                        <div class="text-center mb-5 p-3 rounded-3" style="background-color: #fcfcfc; border: 1px dashed #ddd;">
+                            <small class="text-muted text-uppercase tracking-wider fw-bold">Saldo actual en cuenta</small>
+                            <h3 class="fw-bold text-dark mt-1" id="currentBalance">$1.250.000,00</h3>
+                        </div>
+
+                        <form id="depositForm">
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-muted">MONTO DEL DEPÓSITO</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bg-white border-end-0 text-muted">$</span>
+                                    <input type="number" class="form-control custom-input border-start-0 ps-0 fw-bold" 
+                                           id="depositAmount" placeholder="0.00" min="1" step="0.01" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-muted">MÉTODO DE PAGO</label>
+                                <select class="form-select custom-input" id="depositMethod" required>
+                                    <option value="" selected disabled>Seleccione una opción...</option>
+                                    <option value="transferencia">Transferencia Bancaria</option>
+                                    <option value="tarjeta">Tarjeta de Crédito / Débito</option>
+                                    <option value="efectivo">Depósito en Efectivo</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-muted">NOTAS ADICIONALES (OPCIONAL)</label>
+                                <textarea class="form-control custom-input" id="depositDescription" rows="2" 
+                                          placeholder="Ej: Ahorro mensual"></textarea>
+                            </div>
+
+                            <div class="d-grid gap-3">
+                                <button type="submit" class="btn btn-gold-donjavier btn-lg rounded-pill fw-bold">
+                                    Confirmar Depósito
+                                </button>
+                                <a href="menu.html" class="btn btn-link text-muted text-decoration-none small">
+                                    Cancelar operación
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4">
+                    <div class="card-body p-4 text-center">
+                        <p class="small text-muted fw-bold text-uppercase mb-3">Accesos directos</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <button class="btn btn-outline-dark btn-sm rounded-pill px-3 quick-amount" data-amount="1000">+$1.000</button>
+                            <button class="btn btn-outline-dark btn-sm rounded-pill px-3 quick-amount" data-amount="5000">+$5.000</button>
+                            <button class="btn btn-outline-dark btn-sm rounded-pill px-3 quick-amount" data-amount="10000">+$10.000</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/deposit.js"></script>
+</body>
+</html>
